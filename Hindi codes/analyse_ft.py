@@ -1,10 +1,10 @@
 import fasttext.util
 import pickle
-relations=pickle.load(open('../gold data/hindi_relations.p', 'rb'))
-antonyms=pickle.load(open('../gold data/hindi_antonyms.p', 'rb'))
-plural_hindi=pickle.load(open('../gold data/hindi_plurals.p', 'rb'))
-verbfem=pickle.load(open('../gold data/hindi_verb_fem.p', 'rb'))
-verbmasc=pickle.load(open('../gold data/hindi_verb_masc.p', 'rb'))
+relations=pickle.load(open('../Gold Data/Hindi/Hindi/Pickle/hindi_relations.p', 'rb'))
+antonyms=pickle.load(open('../Gold Data/Hindi/Hindi/Pickle/hindi_antonyms.p', 'rb'))
+plural_hindi=pickle.load(open('../Gold Data/Hindi/Hindi/Pickle/hindi_plurals.p', 'rb'))
+verbfem=pickle.load(open('../Gold Data/Hindi/Hindi/Pickle/hindi_verb_fem.p', 'rb'))
+verbmasc=pickle.load(open('../Gold Data/Hindi/Hindi/Pickle/hindi_verb_masc.p', 'rb'))
 score=[0,0,0,0,0]
 ft=fasttext.load_model('cc.hi.300.bin')
 for x in antonyms:
